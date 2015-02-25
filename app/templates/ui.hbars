@@ -1,0 +1,27 @@
+%header.site_header
+  .site_header_title
+    %h1 hbars
+    %h2 templating for Ember.js
+  %nav
+    %ul
+      %li
+        %a(href="#") try it now
+      %li
+        %a(href="#") documentation
+
+.context_hbars
+  .context
+    .arrow
+    %h3 context
+    %textarea
+  .hbars
+    .arrow
+    %h3 hbars
+    %textarea
+.htmlbars
+  .arrow
+  %h3 HTMLBars
+  %pre
+.html
+  %h3 HTML
+  %pre
