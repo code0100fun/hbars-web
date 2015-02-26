@@ -85,25 +85,24 @@ main
     padding-right: 0
     padding-left: 2rem
 
-textarea
+textarea, pre
   display: block
   width: 100%
   box-sizing: border-box
-  resize: none
-  min-width: 7rem
+  min-height: 15vh
+  background: mix($bg, #fff, 60%)
+  margin: 0
   padding: 2rem
+  font-family: monospace
+  font-size: 2em
+
+textarea
+  resize: none
   border: none
-  background: mix($bg, #fff)
+  background: mix($bg, #fff, 30%)
   &:focus
     background: #fff
     outline: none
-
-textarea, pre
-  min-height: 15vh
-  background: mix($bg, #fff)
-  margin: 0
-  font-family: monospace
-  font-size: 2em
 
 h3.box-label
   position: absolute
