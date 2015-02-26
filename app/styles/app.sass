@@ -34,12 +34,13 @@ a
   min-width: 60rem
 
 header.site_header
+  margin-bottom: 2rem
   +clearfix
   +tablet
     font-size: .85em
   .site_header_title
     float: left
-    border-bottom: 1px solid darken($bg, 20%)
+    border-bottom: 1px solid $border
     padding-bottom: 1em
     h1
       display: inline
@@ -66,7 +67,7 @@ header.site_header
           color: $red
           font-weight: 200
           font-size: 2.4em
-          border-bottom: 1px solid darken($bg, 20%)
+          border-bottom: 1px solid $border
           display: block
           line-height: 1.5
           padding: .2em 0 .2em 0
@@ -74,9 +75,6 @@ header.site_header
         &.active a,
         a:hover
           border-bottom-color: $red
-
-main
-  padding: 4rem 0
 
 .row
   +clearfix
@@ -141,7 +139,7 @@ h3.box-label
   ul
     list-style-type: none
     display: inline-block
-    box-shadow: 0 .1rem .3rem darken($bg, 20%)
+    box-shadow: 0 .1rem .3rem $border
     margin: 0
     padding: 0
     background: mix($bg, #fff, 80%)
@@ -166,7 +164,7 @@ h3.box-label
       line-height: 2rem
   &.open
     ul
-      box-shadow: 0 .2rem .5rem darken($bg, 20%)
+      box-shadow: 0 .2rem .5rem $border
       li
         &:hover
           background: #fff
@@ -236,7 +234,7 @@ p.reset
     color: $red
     font-weight: bold
     font-size: 1.2rem
-    border-bottom: 1px solid darken($bg, 20%)
+    border-bottom: 1px solid $border
     line-height: 2
     +transition(border-color .1s)
     &:hover
