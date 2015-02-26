@@ -8,7 +8,7 @@
         %li.active
           %a(href="#") try it now
         %li
-          %a(href="#") documentation
+          %a(href="https://github.com/code0100fun/hbars") github &rarr;
 
   %main
     {{ ui-subnav  }}
