@@ -18,7 +18,8 @@ module.exports = function(environment) {
       // when it is created
     },
     sassOptions: {
-      inputFile: 'app.sass'
+      inputFile: 'app.sass',
+      includePaths: ['vendor/styles']
     }
   };
 
