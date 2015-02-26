@@ -33,8 +33,23 @@ a
   max-width: 140rem
   min-width: 60rem
 
+.row
+  +clearfix
+  margin-bottom: 3rem
+
+.half
+  float: left
+  box-sizing: border-box
+  width: 50%
+  padding-right: 2rem
+  &.right
+    padding-right: 0
+    padding-left: 2rem
+
+
 header.site_header
   margin-bottom: 2rem
+  font-weight: 200
   +clearfix
   +tablet
     font-size: .85em
@@ -44,7 +59,6 @@ header.site_header
     padding-bottom: 1em
     h1
       display: inline
-      font-weight: 200
       font-size: 3.6em
       line-height: 1
       margin: 0
@@ -65,7 +79,6 @@ header.site_header
         margin-left: 2em
         a
           color: $red
-          font-weight: 200
           font-size: 2.4em
           border-bottom: 1px solid $border
           display: block
@@ -75,19 +88,6 @@ header.site_header
         &.active a,
         a:hover
           border-bottom-color: $red
-
-.row
-  +clearfix
-  margin-bottom: 3rem
-
-.half
-  float: left
-  box-sizing: border-box
-  width: 50%
-  padding-right: 2rem
-  &.right
-    padding-right: 0
-    padding-left: 2rem
 
 textarea, pre
   display: block
