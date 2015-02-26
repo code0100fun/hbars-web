@@ -1,5 +1,6 @@
 @import "normalize"
 @import "bourbon"
+@import "cask"
 @import "variables"
 @import "mixins"
 
@@ -11,6 +12,7 @@ body
   font-family: $helvetica
   color: #444
   -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: none
   &:before
     position: absolute
     display: block
@@ -25,28 +27,31 @@ a
   text-decoration: none
 
 .wrapper
-  padding: 4rem 6rem
+  box-sizing: border-box
+  +responsive(padding, 4rem 8rem, 4rem)
   margin: 0 auto
   max-width: 140rem
   min-width: 60rem
 
 header.site_header
   +clearfix
+  +tablet
+    font-size: .85em
   .site_header_title
     float: left
     border-bottom: 1px solid darken($bg, 20%)
-    padding-bottom: 1rem
+    padding-bottom: 1em
     h1
       display: inline
       font-weight: 200
-      font-size: 3.6rem
+      font-size: 3.6em
       line-height: 1
       margin: 0
     h2
       display: inline
       color: $red
       font-weight: 400
-      font-size: 1.4em
+      font-size: 1.4rem
       margin: 0 0 0 1em
   nav
     float: right
@@ -56,15 +61,15 @@ header.site_header
       li
         display: inline-block
         vertical-align: bottom
-        margin-left: 2rem
+        margin-left: 2em
         a
           color: $red
           font-weight: 200
-          font-size: 2.4rem
+          font-size: 2.4em
           border-bottom: 1px solid darken($bg, 20%)
           display: block
           line-height: 1.5
-          padding: .3rem 0 .7rem 0
+          padding: .2em 0 .2em 0
         &.active a,
         a:hover
           border-bottom-color: $red
@@ -89,20 +94,23 @@ textarea, pre
   display: block
   width: 100%
   box-sizing: border-box
-  min-height: 15vh
-  background: mix($bg, #fff, 60%)
+  min-height: 5vh
   margin: 0
   padding: 2rem
   font-family: monospace
-  font-size: 2em
+  font-size: 1.6em
 
 textarea
   resize: none
   border: none
   background: mix($bg, #fff, 30%)
+  min-height: 20vh
   &:focus
     background: #fff
     outline: none
+
+pre
+  margin-bottom: 2rem
 
 h3.box-label
   position: absolute
@@ -192,11 +200,13 @@ h3.box-label
       right: 2rem
 
 .htmlbars
+  background: mix($bg, #fff, 60%)
   +arrow-right($red)
   h3.box-label
     color: $red
 
 .html
+  background: mix($bg, #fff, 60%)
   +arrow-bottom($blue)
   h3.box-label
     color: $blue
