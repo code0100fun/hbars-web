@@ -16,11 +16,11 @@
       .arrow
       .row
         .context
+          %textarea
           %h3.box-label context
-          %textarea
         .hbars
-          %h3.box-label hbars
           %textarea
+          %h3.box-label hbars
     .row
       .half
         .htmlbars

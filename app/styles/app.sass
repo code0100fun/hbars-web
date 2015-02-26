@@ -70,6 +70,7 @@ header.site_header
           display: block
           line-height: 1.5
           padding: .2em 0 .2em 0
+          +transition(border-color .1s)
         &.active a,
         a:hover
           border-bottom-color: $red
@@ -105,9 +106,12 @@ textarea
   border: none
   background: mix($bg, #fff, 30%)
   min-height: 20vh
+  +transition(background .2s)
   &:focus
     background: #fff
     outline: none
+    + h3
+      opacity: .5
 
 pre
   margin-bottom: 2rem
@@ -121,6 +125,7 @@ h3.box-label
   text-align: center
   font-size: 1.4rem
   margin: 0
+  +transition(opacity .5s)
 
 .subnav
   margin-bottom: 3rem
@@ -233,5 +238,6 @@ p.reset
     font-size: 1.2rem
     border-bottom: 1px solid darken($bg, 20%)
     line-height: 2
+    +transition(border-color .1s)
     &:hover
       border-bottom-color: $red
