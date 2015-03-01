@@ -1,0 +1,38 @@
+.wrapper
+  %header.site_header
+    .site_header_title
+      %h1 hbars
+      %h2 templating for Ember.js
+    %nav
+      %ul
+        %li.active
+          %a(href="#") try it now
+        %li
+          %a(href="https://github.com/code0100fun/hbars") github &rarr;
+
+  %main
+    =ui-subnav
+    .row.context_hbars
+      .arrow
+      .row
+        .context
+          {{textarea value=jsonContext}}
+          %h3.box-label context
+        .hbars
+          {{textarea value=hbarsTemplate}}
+          %h3.box-label hbars
+    .row
+      .half
+        .htmlbars
+          .arrow
+          %h3.box-label HTMLBars
+          %pre= htmlbarsTemplate
+      .half.right
+        .html
+          .arrow
+          %h3.box-label HTML
+          %pre=renderedHTML
+    .output
+      {{view id="rendered" context=jsContext template=htmlbarsCompiled}}
+    %p.reset
+      %a(href="#") reset example
