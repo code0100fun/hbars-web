@@ -16,9 +16,11 @@
       .arrow
       .row
         .context
+          %p.error Expected "}" or [^}] but end of input found.
           %textarea
           %h3.box-label context
         .hbars
+          %p.error Expected "}" or [^}] but end of input found.
           %textarea
           %h3.box-label hbars
     .row
@@ -33,8 +35,7 @@
           %h3.box-label HTML
           %pre
     .output
-      %div
-        %h2 This is the war room!
-        %p There's no fighting in the war room!
+      %h2 This is the war room!
+      %p There's no fighting in the war room!
     %p.reset
       %a(href="#") reset example
