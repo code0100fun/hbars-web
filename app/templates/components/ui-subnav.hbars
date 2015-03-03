@@ -1,13 +1,5 @@
 %nav
   %ul{action "toggle"}
-    %li tags
-    %li nested tags
-    %li classes & ids
-    %li inline expressions
-    %li block expressions
-    %li if/else/unless
-    %li.active raw attributes
-    %li literal binding
-    %li quoted binding
-    %li helpers
-    %li interpolation
+   -each examples as |example|
+     %li{class="#{if example.active 'active'}"}{action "loadExample" example}
+       =example.name

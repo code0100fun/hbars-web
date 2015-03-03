@@ -4,12 +4,22 @@ import hbars from 'compiler';
 var hbarsCompile = hbars.compile;
 
 export default Ember.Controller.extend({
-  hbarsTemplate: "hbars",
-  model: {},
+  actions: {
+    loadExample: function(example){
+      this.transitionToRoute("example", example);
+    },
+    click: function(){
+      eval(this.get('jsContext.callback'));
+    },
+    reset: function(){
+      window.location = window.location;
+    }
+  },
+  hbarsTemplate: Ember.computed.alias('model.template'),
+  jsContext: Ember.computed.alias('model.context'),
   jsonContext: Ember.computed('jsContext', function(){
     return JSON.stringify(this.get('jsContext'));
   }),
-  jsContext: Ember.computed.alias('model'),
   jsonError: null,
   hbarsError: null,
   htmlbarsError: null,

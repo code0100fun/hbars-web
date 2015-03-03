@@ -6,12 +6,13 @@
     %nav
       %ul
         %li.active
-          %a(href="#") try it now
+          -link-to "root"
+            try it now
         %li
           %a(href="https://github.com/code0100fun/hbars") github &rarr;
 
   %main
-    =ui-subnav
+    =ui-subnav examples=examples loadExample="loadExample"
     .row.context_hbars
       .arrow
       .row
@@ -39,4 +40,5 @@
     .output
       {{view id="rendered" context=jsContext template=htmlbarsCompiled}}
     %p.reset
-      %a(href="#") reset example
+      %a(href="#"){action "reset"}
+        reset example
