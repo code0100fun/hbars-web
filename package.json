@@ -1,5 +1,6 @@
 {
   "name": "hbars-web",
+  "repository": "https://github.com/code0100fun/hbars-web.git",
   "version": "0.0.0",
   "description": "Small description for hbars-web goes here",
   "private": true,
