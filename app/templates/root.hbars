@@ -42,3 +42,11 @@
     %p.reset
       %a(href="#"){action "reset"}
         reset example
+
+  %footer.site_footer
+    %p
+      maintained by
+      %a(href="http://twitter.com/code0100fun") Chase McCarthy
+      %span •
+      site design by
+      %a(href="http://twitter.com/camerondaigle") Cameron Daigle

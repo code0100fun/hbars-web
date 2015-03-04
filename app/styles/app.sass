@@ -62,6 +62,7 @@ header.site_header
       font-size: 3.6em
       line-height: 1
       margin: 0
+      font-weight: 300
     h2
       display: inline
       color: $red
@@ -88,6 +89,24 @@ header.site_header
         &.active a,
         a:hover
           border-bottom-color: $red
+
+footer.site_footer
+  text-align: center
+  padding: 4rem 0
+  font-size: 1.1rem
+  font-weight: bold
+  color: #666
+  a
+    display: inline-block
+    color: $red
+    border-bottom: 1px solid $border
+    line-height: 2
+    +transition(border-color .1s)
+    &:hover
+      border-bottom-color: $red
+  span
+    opacity: .5
+    margin: 0 5px
 
 textarea, pre
   display: block
