@@ -1,0 +1,5 @@
+%nav
+  %ul{action "toggle"}
+   -each examples as |example|
+     %li{class="#{if example.active 'active'}"}{action "loadExample" example}
+       =example.name

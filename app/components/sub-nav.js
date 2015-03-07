@@ -8,6 +8,9 @@ export default Ember.Component.extend({
   actions: {
     toggle: function() {
       this.toggleProperty('open');
+    },
+    loadExample: function(example){
+      this.sendAction("loadExample", example);
     }
   }
 });

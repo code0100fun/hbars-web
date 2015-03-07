@@ -12,7 +12,7 @@
           %a(href="https://github.com/code0100fun/hbars") github &rarr;
 
   %main
-    =ui-subnav examples=examples loadExample="loadExample"
+    =sub-nav examples=examples loadExample="loadExample"
     .row.context_hbars
       .arrow
       .row
