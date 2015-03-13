@@ -19,12 +19,12 @@
         .context
           -if jsonError
             %p.error=jsonError
-          {{textarea value=jsonContext}}
+          = textarea value=jsonContext
           %h3.box-label context
         .hbars
           -if hbarsError
             %p.error=hbarsError
-          {{textarea value=hbarsTemplate}}
+          = textarea value=hbarsTemplate
           %h3.box-label hbars
     .row
       .half
@@ -38,7 +38,7 @@
           %h3.box-label HTML
           %pre=renderedHTML
     .output
-      {{view id="rendered" context=jsContext template=htmlbarsCompiled}}
+      = view id="rendered" context=jsContext template=htmlbarsCompiled
     %p.reset
       %a(href="#"){action "reset"}
         reset example
