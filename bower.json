@@ -1,11 +1,11 @@
 {
   "name": "hbars-web",
   "dependencies": {
-    "loader.js": "~3.2.0",
     "jquery": "^1.11.1",
     "ember": "1.11.0-beta.4",
     "ember-data": "1.0.0-beta.15",
-    "ember-resolver": "~0.1.11",
+    "ember-resolver": "~0.1.12",
+    "loader.js": "ember-cli/loader.js#3.2.0",
     "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.3",
     "ember-cli-test-loader": "ember-cli-test-loader#0.1.3",
     "ember-load-initializers": "ember-cli/ember-load-initializers#0.0.2",
@@ -14,6 +14,6 @@
     "qunit": "~1.17.1",
     "bourbon": "3.2.1",
     "Faker": "~2.1.2",
-    "hbars": "~0.1.3"
+    "hbars": "~0.1.6"
   }
 }

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import hbars from 'compiler';
+import hbars from 'hbars/compiler';
 
 var hbarsCompile = hbars.compile;
 
