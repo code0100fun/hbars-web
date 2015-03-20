@@ -23,7 +23,10 @@
           %h3.box-label context
         .hbars
           -if hbarsError
-            %p.error=hbarsError
+            %p.error
+              =hbarsError
+              %br
+              (must be valid JSON)
           = textarea value=hbarsTemplate
           %h3.box-label hbars
     .row
